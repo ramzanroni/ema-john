@@ -1,0 +1,37 @@
+.iphone {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.main-text {
+    margin-top: 70px;
+}
+
+.main-text h4 {
+    font-size: 70px;
+    background: linear-gradient(to right, #f32170,
+            #ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.main-text span {
+    text-align:center;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(255,249,34), rgba(255,0,128), rgba(56,2,155,0));
+    border-image-slice: 1;
+    width:100%;
+
+}
+
+.review {
+    margin-top: 70px !important;
+}
+.review-item{
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+
+}
