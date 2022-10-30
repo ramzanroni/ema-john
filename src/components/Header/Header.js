@@ -1,25 +1,17 @@
 import React from 'react';
-import { Container, Nav, Navbar } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
 import './Header.css';
+import logo from '../../images/Logo.svg';
 const Header = () => {
     return (
-        <div>
-             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container>
-        <Navbar.Brand href="/home">iPhone</Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Link to="/reviews">Reviews</Link>
-            <Link to="/dashboard">Dashboard</Link>
-            <Link to="/blogs">Blogs</Link>
-            <Link to="/about">Abouts</Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-        </div>
+        <nav className='header'>
+            <img src={logo} alt="" />
+            <div>
+                <a href="/shop">Shop</a>
+                <a href="/orders">Orders</a>
+                <a href="/inventory">Inventory</a>
+                <a href="/about">About</a>
+            </div>
+        </nav>
     );
 };
 
